@@ -1,0 +1,76 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+ *= require "foundation"
+ *= require jquery.fileupload-ui
+*/
+body { font-family: Cambria, Cochin, Trebuchet MS, Tahoma, Verdana, Arial, sans-serif; font-size: 1.0em;}
+
+input {  
+    padding: 5px;  
+    font-size: 16px;  
+    font-family: Cambria, Cochin, Georgia, serif;
+    text-shadow: 0px 1px 0px #ccc;  
+    outline: none;    
+    -webkit-border-radius: 5px;  
+    -moz-border-radius: 5px;  
+    border-radius: 5px;  
+    border: 2px solid #999999; 
+    background-image: 'search';
+    background-position: 270px -10px;
+    background-repeat: no-repeat; 
+    z-index: 10;
+}  
+input:focus {  
+    -webkit-box-shadow: 0px 0px 5px #FAFAD2;  
+    -moz-box-shadow: 0px 0px 5px #FAFAD2;  
+    box-shadow: 0px 0px 5px #FAFAD2 ;  
+}  
+
+#list-results-panel:focus { outline: none }
+
+#list-results-panel {
+	height: 600px;
+	overflow: auto;
+	font-family: Cambria;
+}
+#list-search-box{
+    display: block;
+    margin: 10px 0px 0px 0px;
+}
+#list-results-panel li{
+    background-color: #fff;
+    border: 1px dotted #999;
+    border-width: 1px;
+    padding: 10px 10px;
+    margin: 0px;
+}
+#list-results-panel li:hover{
+	background-color: #ddd;
+}
+
+#list-results-panel li a{
+    color: black;
+    text-decoration:none;
+    display: block;
+}
+
+#detail-panel{
+	font-family: cambria;
+	margin-top: 65px;
+}
+
+#detail-panel h3{
+	font-size: 1.5em;
+}
+
+/* css for timepicker */
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }

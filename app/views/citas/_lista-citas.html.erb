@@ -1,0 +1,23 @@
+<% if @citas.count > 0 then %>
+	<h3> Próximas citas </h3>
+	<ul>
+	  <% @citas.each do |cita| %>
+	    <li>
+	      <a href="/clientes/<%=cita.cliente_id%>" data-remote="true">
+	        <%= Cliente.find(cita.cliente_id.to_i).nombre[0..18] %>
+	        <%= cita.texto %>
+	        <%= diahora(cita.fecha) %>
+	      </a>  
+	    </li>
+	  <% end %>
+	</ul>
+<% else %>
+	<div class="row">
+			<%= image_tag "sad-hello-kitty.jpg", :class => "four columns offset-by-two" %>
+	</div>
+	<div class="row">
+		<div class="ten columns offset-by-two">
+			<h3>No hay citas pendientes</h3>
+		</div>
+	</div>
+<% end %>

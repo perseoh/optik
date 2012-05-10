@@ -1,0 +1,13 @@
+<h2> Procesamiento del excel </h2>
+<br>
+<!-- Menu de paginas: para cambiar a Admin -->
+  <div class="topright">
+    <%= link_to "Volver", "/clientes" %> · <%= link_to "Admin", "#" %>
+  </div>
+
+
+  <!-- formulario de carga de archivo -->
+  <%= form_for @nuevo_excel , :html => { :multipart => true} do |f| %>            
+        <%= f.file_field :Archivo %>
+        <%= f.submit %>
+    <% end %>

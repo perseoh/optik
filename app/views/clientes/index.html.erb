@@ -1,0 +1,26 @@
+<!-- Contenedor principal -->
+<div class="container">
+  <div class="row"> 
+    <!-- Columna izquierda -->
+    <div class="four columns" id="main-panel">
+            <div id="list-search-box">
+              <%= form_tag(clientes_path, :method => "get", :id => "filtro_clientes", :remote => true) do %>
+              <%= text_field_tag(:busqueda) %>
+              <% end %>
+            </div>  
+            <div id="list-results-panel">
+              <%= render 'listaClientes' %>
+            </div>
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="eight columns" id="detail-panel">
+          <!-- Se carga el contenido por ajax -->
+          <%= render 'pendientes' %>
+    </div>
+  </div>
+  <!-- Menu de paginas: para cambiar a Admin -->
+  <div class="topright">
+    <%= link_to "Archivos", "/excel" %> · <%= link_to "Admin", "#" %>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<h1>Listing notas</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Cliente</th>
+    <th>Texto</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @notas.each do |nota| %>
+  <tr>
+    <td><%= nota.user %></td>
+    <td><%= nota.cliente %></td>
+    <td><%= nota.texto %></td>
+    <td><%= link_to 'Show', nota %></td>
+    <td><%= link_to 'Edit', edit_nota_path(nota) %></td>
+    <td><%= link_to 'Destroy', nota, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Nota', new_nota_path %>

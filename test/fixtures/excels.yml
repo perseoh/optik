@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  archivo: MyString
+  estado: MyString
+  piezas_12m: 1
+  piezas_last_pedido: 1
+  piezas_pendientes: 1
+  piezas_fact_last_mes: 1
+  fecha_last_pedido: 1
+  nombre: 1
+  ciudad: 1
+  direccion: 1
+  provincia: 1
+  codigo: 1
+  cp: 1
+  telefono: 1
+  grupo: 1
+
+two:
+  archivo: MyString
+  estado: MyString
+  piezas_12m: 1
+  piezas_last_pedido: 1
+  piezas_pendientes: 1
+  piezas_fact_last_mes: 1
+  fecha_last_pedido: 1
+  nombre: 1
+  ciudad: 1
+  direccion: 1
+  provincia: 1
+  codigo: 1
+  cp: 1
+  telefono: 1
+  grupo: 1

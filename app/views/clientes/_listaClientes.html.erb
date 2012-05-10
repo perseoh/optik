@@ -1,0 +1,13 @@
+<ul>
+  <% if @clientes.count > 0  %>
+    <% @clientes.each do |cliente| %>
+      <li>
+          <a href="/clientes/<%= cliente.id %>" data-remote="true">
+            <%= cliente.nombre[0..34] %>
+          </a>
+      </li>
+    <% end %>
+  <% else %>
+    <li>No hay registros disponibles</li>
+  <% end %>
+</ul>

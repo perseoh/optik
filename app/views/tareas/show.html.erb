@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Cliente:</b>
+  <%= @tarea.cliente %>
+</p>
+
+<p>
+  <b>Texto:</b>
+  <%= @tarea.texto %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @tarea.user %>
+</p>
+
+<p>
+  <b>Fecha:</b>
+  <%= @tarea.fecha %>
+</p>
+
+<p>
+  <b>Estado:</b>
+  <%= @tarea.estado %>
+</p>
+
+
+<%= link_to 'Edit', edit_tarea_path(@tarea) %> |
+<%= link_to 'Back', tareas_path %>

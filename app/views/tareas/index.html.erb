@@ -1,0 +1,28 @@
+<table>
+  <tr>
+    <th>Cliente</th>
+    <th>Texto</th>
+    <th>User</th>
+    <th>Fecha</th>
+    <th>Estado</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tareas.each do |tarea| %>
+  <tr>
+    <td><%= tarea.cliente %></td>s
+    <td><%= tarea.texto %></td>
+    <td><%= tarea.fecha %></td>
+    <td><%= tarea.estado %></td>
+    <td><%= link_to 'Show', tarea %></td>
+    <td><%= link_to 'Edit', edit_tarea_path(tarea) %></td>
+    <td><%= link_to 'Destroy', tarea, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tarea', new_tarea_path %>

@@ -1,0 +1,45 @@
+<%= form_for(@venta) do |f| %>
+  <% if @venta.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@venta.errors.count, "error") %> prohibited this venta from being saved:</h2>
+
+      <ul>
+      <% @venta.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user %><br />
+    <%= f.number_field :user %>
+  </div>
+  <div class="field">
+    <%= f.label :cliente %><br />
+    <%= f.number_field :cliente %>
+  </div>
+  <div class="field">
+    <%= f.label :marca %><br />
+    <%= f.number_field :marca %>
+  </div>
+  <div class="field">
+    <%= f.label :piezas_12m %><br />
+    <%= f.number_field :piezas_12m %>
+  </div>
+  <div class="field">
+    <%= f.label :piezas_last_pedido %><br />
+    <%= f.number_field :piezas_last_pedido %>
+  </div>
+  <div class="field">
+    <%= f.label :piezas_pendientes %><br />
+    <%= f.number_field :piezas_pendientes %>
+  </div>
+  <div class="field">
+    <%= f.label :piezas_fact_last_mes %><br />
+    <%= f.number_field :piezas_fact_last_mes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

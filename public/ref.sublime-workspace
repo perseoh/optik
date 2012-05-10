@@ -1,0 +1,221 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"border-",
+				"border-radius"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/Perseoh/Google Drive/ref/config/initializers/refinery/core.rb",
+			"settings":
+			{
+				"buffer_size": 1921,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Perseoh/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Perseoh/Google Drive/Optik/public/.htaccess",
+		"/C/Users/Perseoh/Google Drive/Optik/config/environment.rb",
+		"/C/Users/Perseoh/Google Drive/Optik/app/assets/stylesheets/application.css",
+		"/C/Users/Perseoh/Google Drive/Optik/app/views/clientes/_listaClientes.html.erb",
+		"/C/Users/Perseoh/Google Drive/Optik/app/views/clientes/show.html.erb",
+		"/C/Users/Perseoh/Google Drive/Optik/app/views/clientes/show.js.erb",
+		"/C/Users/Perseoh/Google Drive/Optik/app/assets/javascripts/application.js",
+		"/C/Users/Perseoh/Google Drive/Optik/app/views/clientes/_tareas.html.erb",
+		"/C/Users/Perseoh/Google Drive/Optik/app/views/clientes/index.html.erb",
+		"/C/Users/Perseoh/Google Drive/Optik/app/views/clientes/index.js.erb",
+		"/C/Users/Perseoh/Google Drive/Optik/config/locales/en.yml",
+		"/C/Users/Perseoh/Google Drive/Optik/app/assets/javascripts/jquery-ui-timepicker-addon.js",
+		"/C/Users/Perseoh/Google Drive/Optik/Gemfile",
+		"/C/Users/Perseoh/Google Drive/Optik/app/views/tareas/index.js.erb",
+		"/C/Users/Perseoh/Google Drive/Optik/app/views/tareas/index.html.erb",
+		"/C/Users/Perseoh/Google Drive/Optik/app/controllers/tareas_controller.rb",
+		"/C/Users/Perseoh/Google Drive/Optik/app/views/tareas/_lista-tareas.html.erb",
+		"/C/Users/Perseoh/Google Drive/Optik/app/models/cliente.rb",
+		"/C/Users/Perseoh/Google Drive/Optik/app/models/cita.rb",
+		"/C/Users/Perseoh/Google Drive/Optik/app/models/tarea.rb",
+		"/C/Users/Perseoh/Google Drive/Optik/app/helpers/application_helper.rb",
+		"/C/Users/Perseoh/Google Drive/Optik/config/routes.rb",
+		"/C/Users/Perseoh/Google Drive/Optik/app/views/tareas/create.js.erb",
+		"/C/Users/Perseoh/Google Drive/Optik/app/controllers/clientes_controller.rb",
+		"/C/Users/Perseoh/Google Drive/Optik/app/models/marca.rb",
+		"/C/Users/Perseoh/Google Drive/Optik/app/models/venta.rb",
+		"/C/Users/Perseoh/Google Drive/Optik_old/app/assets/stylesheets/application.css",
+		"/C/Users/Perseoh/Google Drive/Optik/app/assets/javascripts/clientes.js",
+		"/C/Users/Perseoh/Google Drive/Optik/app/assets/stylesheets/backup.txt",
+		"/C/Users/Perseoh/Google Drive/Optik/app/views/layouts/application.html.erb",
+		"/C/Users/Perseoh/Google Drive/Optik/app/assets/stylesheets/splitview.css",
+		"/C/Users/Perseoh/Google Drive/Optik/to-do",
+		"/C/Users/Perseoh/Google Drive/Optik/app/assets/stylesheets/scaffolds.css.scss",
+		"/C/Users/Perseoh/Google Drive/Optik/app/views/clientes/_detalleCliente.html.erb",
+		"/C/Users/Perseoh/Google Drive/Optik_old/app/controllers/clientes_controller.rb",
+		"/C/Users/Perseoh/Google Drive/Optik - 03052012/app/controllers/clientes_controller.rb",
+		"/C/Users/Perseoh/Google Drive/Optik/app/controllers/clientes_controller_old1.rb",
+		"/C/Users/Perseoh/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Perseoh/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Perseoh/Google Drive/Optik/db/migrate/20120502163331_create_tareas.rb"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"blo",
+			"hid",
+			"a {",
+			"a{",
+			"black",
+			"hover",
+			"back"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/Perseoh/Google Drive/ref/config/initializers/refinery/core.rb",
+					"settings":
+					{
+						"buffer_size": 1921,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								591,
+								591
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 262.0,
+	"status_bar_visible": true
+}

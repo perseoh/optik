@@ -1,0 +1,51 @@
+<div data-role="header">
+  <h1><%= @cliente.nombre %></h1> <a href="/clientes">Volver</a>
+</div>
+
+<div data-role="content">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Ciudad:</b>
+  <%= @cliente.ciudad %>
+</p>
+
+<p>
+  <b>Direccion:</b>
+  <%= @cliente.direccion %>
+</p>
+
+<p>
+  <b>Provincia:</b>
+  <%= @cliente.provincia %>
+</p>
+
+<p>
+  <b>Codigo:</b>
+  <%= @cliente.codigo %>
+</p>
+
+<p>
+  <b>Cp:</b>
+  <%= @cliente.cp %>
+</p>
+
+<p>
+  <b>Telefono:</b>
+  <%= @cliente.telefono %>
+</p>
+
+<p>
+  <b>Grupo:</b>
+  <%= @cliente.grupo_id %>
+</p>
+
+<p>
+  <b>Notas:</b>
+  <%= @cliente.notas %>
+</p>
+
+
+<%= link_to 'Edit', edit_cliente_path(@cliente) %> |
+<%= link_to 'Back', clientes_path %>
+</div>

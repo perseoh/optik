@@ -1,0 +1,24 @@
+<% if @tareas.count > 0 then %>
+	<h3> Tareas Pendientes </h3>
+	<ul>
+	<% @tareas.each do |tarea| %>
+	  <li>
+	    <a href="/clientes/<%=tarea.cliente_id%>" data-remote="true">
+	      <%= Cliente.find(tarea.cliente_id.to_i).nombre[0..18] %>
+	      <%= tarea.texto %>
+	      <%= diahora(tarea.fecha) %>
+	    </a>  
+	  </li>
+	<% end %>
+	</table>
+	<%= link_to 'New Tarea', new_tarea_path %>
+<% else %>
+	<div class="row">
+			<%= image_tag "parque.png", :class => "six columns offset-by-two" %>
+	</div>
+	<div class="row">
+		<div class="ten columns offset-by-two">
+			<h3>No hay tareas pendientes</h3>
+		</div>
+	</div>
+<% end %>

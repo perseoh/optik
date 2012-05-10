@@ -1,0 +1,11 @@
+<% if @cliente.citas.count > 0 %>
+    <hr>
+	<p>Citas pendientes</p>
+    <% @cliente.citas.each do |cita| %>
+        <%=  diahora(cita.fecha) %>
+        <p class="ten columns offset-by-one">
+            <%= cita.texto %>
+            <%= link_to " X ",{ :controller=>'citas',:action=>'destroy',:id=>cita.id},{:confirm=>"Eliminar la cita?", :method=>:delete, :remote=>:true} %>
+        </p>
+    <% end %>
+<% end %>

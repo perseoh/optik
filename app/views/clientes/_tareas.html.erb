@@ -1,0 +1,11 @@
+<% if @cliente.tareas.count > 0 %>
+    <hr>
+	<p>Tareas pendientes</p>
+    <% @cliente.tareas.each do |t| %>
+        <%=  diahora(t.fecha) %>
+        <p class="ten columns offset-by-one">
+            <%= t.texto %>
+            <%= link_to " X ",{ :controller=>'tareas',:action=>'destroy',:id=>t.id},{:confirm=>"Eliminar la tarea?", :method=>:delete, :remote=>:true} %>
+        </p>
+    <% end %>
+<% end %>

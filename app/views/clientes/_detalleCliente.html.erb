@@ -1,0 +1,114 @@
+<div class="row">
+	<div class="nine columns offset-by-one">
+		<h3><%= @cliente.nombre %></h3> 
+	</div>
+	<div class="one columns offset-by-one" >
+		<%= link_to "Cerrar", "/pendientes", :class=>"small white nice button radius", :remote=>:true %>
+	</div>
+</div>
+<div class="row">	
+	<div class="twelve columns">
+		<p id="notice"><%= notice %></p>
+	</div>
+</div>
+<div class="row">
+		<div class="nine rows offset-by-two" id="detalle-datos-cliente">
+			<ul>
+			    <li> <%= @cliente.direccion %>, <%= @cliente.ciudad %> (<%= @cliente.cp %>) <%= @cliente.provincia %></li>
+			    <li> <%= @cliente.telefono %> </li>
+			</ul>
+		</div>
+</div>	
+
+<hr>
+
+<!-- Lista de marcas y piezas pendientes -->
+<% if @lista_ventas.count > 0 %>
+	<% @lista_ventas.each do |ventaLine| %>
+		<div class="row">
+			<div class="two columns offset-by-two">
+				<%= Marca.find(ventaLine.marca_id).codigo %>
+			</div>
+			<div class="four columns">
+				Piezas Pendientes: <%= ventaLine.piezas_pendientes %>
+				Piezas en último pedido: <%= ventaLine.piezas_last_pedido %>
+			</div>
+			<div class="four columns">
+				Piezas facturadas último mes: <%= ventaLine.piezas_fact_last_mes %>
+				Piezas últimos 12 meses: <%= ventaLine.piezas_12m %>
+			</div>
+		</div>
+	<% end %>
+
+<hr>
+<% end %>
+<!-- Botonera: Nueva tarea, cita, posible marca de registro -->
+<div class="row">
+	<div class="eight columns offset-by-two">
+		<a href="#" class="small white nice button radius" data-reveal-id="tarea-form">Tarea</a>
+		<a href="#" class="small white nice button radius" data-reveal-id="cita-form">Cita</a>
+	</div>
+</div>
+
+<!-- situación provisional: formulario de TAREA nueva -->
+<div id="tarea-form" class="reveal-modal">
+	<h3>Nueva tarea</h3>
+		<%= form_tag( {:method=>"get", :controller=>"tareas", :action=>"create"},{:remote=>"true"}) do %>
+			<div class="row">	
+		  		Fecha
+		  	</div>
+		  	<div class="row">
+		  		 <%= text_field_tag :fecha,nil, :class=>'date-picker', :id => 'tarea-picker'%>
+		  	</div>
+		  	<div class="row">
+		  		Texto
+		  	</div>
+		  	<div class="row">	
+		  		<%= text_field_tag(:texto) %>
+		  	</div>		
+		
+		  <%= hidden_field_tag(:cliente_id, @cliente.id ) %>
+		  <%= hidden_field_tag(:user_id, "1") %>
+		  <%= hidden_field_tag(:estado, "pendiente") %>
+		  <%= submit_tag("OK") %>
+		<% end %>
+
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<!-- situación provisional: formulario de CITA nueva -->
+<div id="cita-form" class="reveal-modal">
+	<h3>Nueva Cita</h3>
+		<%= form_tag( {:method=>"get", :controller=>"citas", :action=>"create"},{:remote=>"true"}) do %>
+			<div class="row">	
+		  		Fecha
+		  	</div>
+		  	<div class="row">
+		  		 <%= text_field_tag :fecha,nil, :class=>'date-picker', :id=>'cita-picker' %>
+		  	</div>
+		  	<div class="row">
+		  		Texto
+		  	</div>
+		  	<div class="row">	
+		  		<%= text_field_tag(:texto) %>
+		  	</div>		
+		
+		  <%= hidden_field_tag(:cliente_id, @cliente.id ) %>
+		  <%= hidden_field_tag(:user_id, "1") %>
+		  <%= submit_tag("OK") %>
+		<% end %>
+
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<!-- Lista de tareas pendientes y creación de tareas nuevas -->
+<div class="row">
+	<%= render "tareas" %>
+</div>
+
+<!-- Notas del cliente (seguramente desaparezca con las tareas) -->
+<div class="row">
+
+	<%= render "citas" %>
+
+</div>

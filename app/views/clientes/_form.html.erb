@@ -1,0 +1,42 @@
+<%= form_for(@cliente) do |f| %>
+  <% if @cliente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cliente.errors.count, "error") %> prohibited this cliente from being saved:</h2>
+
+      <ul>
+      <% @cliente.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div id="BasicData">
+    <p class="und-header">Datos de contacto</p>
+    <%= @cliente.direccion %>
+    <%= @cliente.ciudad %> ( <%= @cliente.provincia %> )
+  </div>
+
+  <div id="VentasData">
+    <p class="und-header">Ventas</p>
+    <ul data-role="listview">
+      <li data-role="list-divider">Marca 1</li>
+      Ultimo mes: 10 | ultimos 12 meses: 12
+      <li data-role="list-divider">Marca 2</li>
+      Ultimo mes: 10 | ultimos 12 meses: 12
+      <li data-role="list-divider">Marca 2</li>
+      Ultimo mes: 10 | ultimos 12 meses: 12
+    </ul>
+  </div>
+  <div id="Notas" class="post-it">
+    <h3>NOTAS</h3><%= @cliente.notas %>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua.
+  </div>
+    <br>
+
+  <div data-role="footer"  data-position="fixed" class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

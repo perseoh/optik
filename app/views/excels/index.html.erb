@@ -1,0 +1,13 @@
+<h2> Procesamiento del excel </h2>
+<br>
+<div class="row">
+	<div class="eight columns">
+		<%= link_to "Subir archivo Excel", '/excel/new' , class: "small white nice button radius" %>
+		<%= link_to "Procesar archivo actual", "/excel/parse", class: "small white nice button radius" %>
+	</div>
+</div>
+
+<!-- Menu de paginas: para cambiar a Admin -->
+  <div class="topright">
+    <%= link_to "Volver", "/clientes" %> · <%= link_to "Admin", "#" %>
+  </div>

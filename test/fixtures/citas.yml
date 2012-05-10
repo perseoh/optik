@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user: 1
+  cliente: 1
+  tipo: MyString
+  fecha: 2012-01-17
+  venta: 1
+
+two:
+  user: 1
+  cliente: 1
+  tipo: MyString
+  fecha: 2012-01-17
+  venta: 1

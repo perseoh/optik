@@ -1,0 +1,21 @@
+<div data-role="header">
+  <h1>Nueva cita</h1>
+</div>
+
+<div data-role="content">
+<%= form_for(@cita) do |f| %>
+    <label for="fecha">fecha</label>
+    <input name="fecha" id="fecha" type="date" data-role="datebox"
+           data-options='{"mode": "datebox"}'>
+
+     <label for="hora">hora</label>
+      <input name="hora" id="hora" type="date" data-role="datebox"
+             data-options='{"mode": "timebox"}'>
+
+      <fieldset class="ui-grid-a">
+        <div class="ui-block-a"><button type="submit" data-theme="c">Aceptar</button></div>
+        <div class="ui-block-b"><button type="submit" data-theme="b">Cancelar</button></div>
+      </fieldset>
+<% end %>
+</div>
+

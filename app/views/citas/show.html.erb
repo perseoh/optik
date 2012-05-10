@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @cita.user_id %>
+</p>
+
+<p>
+  <b>Cliente:</b>
+  <%= @cita.cliente_id %>
+</p>
+
+<p>
+  <b>Tipo:</b>
+  <%= @cita.texto %>
+</p>
+
+<p>
+  <b>Fecha:</b>
+  <%= @cita.fecha %>
+</p>
+
+<p>
+  <b>Venta:</b>
+  <%= @cita.venta_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_cita_path(@cita) %> |
+<%= link_to 'Back', citas_path %>

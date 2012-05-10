@@ -1,0 +1,37 @@
+<%= form_for(@tarea) do |f| %>
+  <% if @tarea.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tarea.errors.count, "error") %> prohibited this tarea from being saved:</h2>
+
+      <ul>
+      <% @tarea.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cliente %><br />
+    <%= f.text_field :cliente %>
+  </div>
+  <div class="field">
+    <%= f.label :texto %><br />
+    <%= f.text_field :texto %>
+  </div>
+  <div class="field">
+    <%= f.label :user %><br />
+    <%= f.text_field :user %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha %><br />
+    <%= f.text_field :fecha %>
+  </div>
+  <div class="field">
+    <%= f.label :estado %><br />
+    <%= f.text_field :estado %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

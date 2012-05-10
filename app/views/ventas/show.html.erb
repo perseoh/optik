@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @venta.user %>
+</p>
+
+<p>
+  <b>Cliente:</b>
+  <%= @venta.cliente %>
+</p>
+
+<p>
+  <b>Marca:</b>
+  <%= @venta.marca %>
+</p>
+
+<p>
+  <b>Piezas 12m:</b>
+  <%= @venta.piezas_12m %>
+</p>
+
+<p>
+  <b>Piezas last pedido:</b>
+  <%= @venta.piezas_last_pedido %>
+</p>
+
+<p>
+  <b>Piezas pendientes:</b>
+  <%= @venta.piezas_pendientes %>
+</p>
+
+<p>
+  <b>Piezas fact last mes:</b>
+  <%= @venta.piezas_fact_last_mes %>
+</p>
+
+
+<%= link_to 'Edit', edit_venta_path(@venta) %> |
+<%= link_to 'Back', ventas_path %>

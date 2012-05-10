@@ -1,0 +1,35 @@
+<h1>Listing ventas</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Cliente</th>
+    <th>Marca</th>
+    <th>Piezas 12m</th>
+    <th>Piezas last pedido</th>
+    <th>Piezas pendientes</th>
+    <th>Piezas fact last mes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ventas.each do |venta| %>
+  <tr>
+    <td><%= venta.user %></td>
+    <td><%= venta.cliente %></td>
+    <td><%= venta.marca %></td>
+    <td><%= venta.piezas_12m %></td>
+    <td><%= venta.piezas_last_pedido %></td>
+    <td><%= venta.piezas_pendientes %></td>
+    <td><%= venta.piezas_fact_last_mes %></td>
+    <td><%= link_to 'Show', venta %></td>
+    <td><%= link_to 'Edit', edit_venta_path(venta) %></td>
+    <td><%= link_to 'Destroy', venta, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Venta', new_venta_path %>
